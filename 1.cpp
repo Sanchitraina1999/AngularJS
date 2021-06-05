@@ -159,9 +159,10 @@ int32_t main()
         ll a,b,c,d;
         cin>>a>>b>>c>>d;
         ll ans=0;
-        ll st=0;
+        ll st=1;
+        ll k=0;
         forn(i,1,a+1){
-            st++;
+            ans+=c+k*d;
         }
         cout<<ans<<"\n";
     }
