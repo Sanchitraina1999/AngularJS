@@ -156,10 +156,9 @@ int32_t main()
     FAST;
     TC
     {
-        ll n, maxx = INT_MIN, minn = INT_MAX, sum = 0, x;
-        cin >> n;
-        ll a[n];
-        forn(i, 0, n) cin >> a[i];
+        ll a,b,c,d;
+        cin>>a>>b>>c>>d;
+        cout<<c/a + d/b<<"\n";
     }
     return 0;
 }
