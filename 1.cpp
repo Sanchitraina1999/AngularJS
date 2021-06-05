@@ -162,8 +162,7 @@ int32_t main()
         ans=2*c + (a/b - 1)*d;
         ans*=a;
         ans/=2;
-        ans+=(a%b)*(c + (a/b))
-        ans+=((c*b + a* d )/b) *(a%b);
+        ans+=(a%b)*(c + (a/b)*d);
         cout<<ans<<"\n";
     }
     return 0;
