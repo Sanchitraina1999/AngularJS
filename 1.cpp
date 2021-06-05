@@ -160,7 +160,7 @@ int32_t main()
         cin>>a>>b>>c>>d;
         ll ans=0;
         ll n=a/b;
-        ans+=b*(a/(2*b))
+        ans+=b*((n/2)*(2*c + (n-1)*d));
         cout<<ans<<"\n";
     }
     return 0;
