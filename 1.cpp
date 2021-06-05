@@ -164,6 +164,9 @@ int32_t main()
         forn(i,1,a+1){
             ans+=c+k*d;
             st++;
+            if(st==b){
+                k++;st=1;
+            }
         }
         cout<<ans<<"\n";
     }
