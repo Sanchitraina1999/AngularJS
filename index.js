@@ -1,3 +1,5 @@
 var myapp = angular.module('myapp',[])
 
-myapp.controller('mainController',())
+myapp.controller('mainController',($scope)=>{
+    console.log($scope)
+})
