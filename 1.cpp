@@ -164,15 +164,11 @@ int32_t main()
         forn(i,1,a+1){
             if(i+b<=a){
                 i+=b;
-                ans+=b*
+                ans+=b*(c+k*d);
+                k++;
                 continue;
             }
             ans+=c+k*d;
-            st++;
-            if(st==b){
-                k++;
-                st=0;
-            }
         }
         cout<<ans<<"\n";
     }
