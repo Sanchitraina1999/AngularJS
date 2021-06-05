@@ -160,9 +160,9 @@ int32_t main()
         cin>>a>>b>>c>>d;
         ll ans=0;
         ans=2*c + (a/b - 1)*d;
-        ans/=b;
-        ans*=(a+b);
-        ans/2;
+        ans*=a;
+        ans/=2;
+        ans+=(a%b)*(c + (a/b))
         ans+=((c*b + a* d )/b) *(a%b);
         cout<<ans<<"\n";
     }
