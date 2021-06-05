@@ -161,6 +161,7 @@ int32_t main()
         ll ans=0;
         ll n=a/b;
         ans+=b*((n/2)*(2*c + (n-1)*d));
+        ans+=(a%b)*(c + n*d);
         cout<<ans<<"\n";
     }
     return 0;
