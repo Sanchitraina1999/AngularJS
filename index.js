@@ -1,5 +1,5 @@
 var myapp = angular.module('myapp',[]);
 
-myapp.controller('mainController',($scope)=>{
-    console.log($scope)
+myapp.controller('mainController',function($scope){
+    console.log($scope);
 })
