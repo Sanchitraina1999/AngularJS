@@ -162,7 +162,11 @@ int32_t main()
         ll st=0;
         ll k=0;
         forn(i,1,a+1){
-            if(i+)
+            if(i+b<=a){
+                i+=b;
+                ans+=b*
+                continue;
+            }
             ans+=c+k*d;
             st++;
             if(st==b){
