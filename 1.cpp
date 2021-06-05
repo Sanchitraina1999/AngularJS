@@ -158,7 +158,7 @@ int32_t main()
     {
         ll a,b,c,d;
         cin>>a>>b>>c>>d;
-        cout<<a*(2*c + (a/b - 1)*d) + (a%b)*(c + (a/b)*d)<<"\n";
+        cout<<ans<<"\n";
     }
     return 0;
 }
