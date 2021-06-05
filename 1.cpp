@@ -158,7 +158,7 @@ int32_t main()
     {
         ll a,b,c,d;
         cin>>a>>b>>c>>d;
-        cout<<c/a + d/b<<"\n";
+        cout<<c/a + d/b<<"\n"
     }
     return 0;
 }
