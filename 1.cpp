@@ -161,7 +161,7 @@ int32_t main()
         ll ans=0;
         ll k=0;
         for(ll i=1;i<=(a/b);i++)
-            ans+=(a/b)*b*(c + k*d );
+            ans+=b*(c + k*d ),k++;
         ans+=c+k*d;
         cout<<ans<<"\n";
     }
