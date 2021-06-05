@@ -159,10 +159,10 @@ int32_t main()
         ll a,b,c,d;
         cin>>a>>b>>c>>d;
         ll ans=0;
-        ans=2*c + (a/b - 1)*d;
-        ans*=a;
-        ans/=2;
-        ans+=(a%b)*(c + (a/b)*d);
+        ll st=1;
+        forn(i,1,a+1){
+            
+        }
         cout<<ans<<"\n";
     }
     return 0;
