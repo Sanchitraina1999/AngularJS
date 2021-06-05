@@ -159,17 +159,8 @@ int32_t main()
         ll a,b,c,d;
         cin>>a>>b>>c>>d;
         ll ans=0;
-        ll st=0;
-        ll k=0;
-        forn(i,1,a+1){
-            if(i+b<=a){
-                i+=b-1;
-                ans+=b*(c + k*d );
-                k++;
-                continue;
-            }
+        ans+=(a/b)*b*(c + k*d );
             ans+=c+k*d;
-        }
         cout<<ans<<"\n";
     }
     return 0;
