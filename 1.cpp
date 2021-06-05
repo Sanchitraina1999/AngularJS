@@ -159,10 +159,7 @@ int32_t main()
         ll a,b,c,d;
         cin>>a>>b>>c>>d;
         ll ans=0;
-        ll k=0;
-        for(ll i=1;i<=(a/b);i++)
-            ans+=b*(c + k*d ),k++;
-        ans+=c+k*d;
+        ans+=b*(n/2)
         cout<<ans<<"\n";
     }
     return 0;
