@@ -160,6 +160,10 @@ int32_t main()
         cin>>a>>b>>c>>d;
         ll ans=0;
         ans=2*c*b + a*d;
+        ans/=b;
+        ans*=(a+b);
+        ans/2;
+        ans+=((c*b + a* d )/b) *()
         cout<<ans<<"\n";
     }
     return 0;
