@@ -159,7 +159,7 @@ int32_t main()
         ll a,b,c,d;
         cin>>a>>b>>c>>d;
         ll ans=0;
-        ans=2*c*b + a*d;
+        ans=2*c + (a/b - 1)*d;
         ans/=b;
         ans*=(a+b);
         ans/2;
