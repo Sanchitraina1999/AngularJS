@@ -163,8 +163,8 @@ int32_t main()
         ll k=0;
         forn(i,1,a+1){
             if(i+b<=a){
-                i+=b;
-                ans+=b*(c + k *d);
+                i+=b-1;
+                ans+=b*(c + k*d );
                 k++;
                 continue;
             }
