@@ -163,6 +163,7 @@ int32_t main()
         ll k=0;
         forn(i,1,a+1){
             ans+=c+k*d;
+            st++;
         }
         cout<<ans<<"\n";
     }
