@@ -159,9 +159,9 @@ int32_t main()
         ll a,b,c,d;
         cin>>a>>b>>c>>d;
         ll ans=0;
-        ll st=1;
+        ll st=0;
         forn(i,1,a+1){
-            
+            st++;
         }
         cout<<ans<<"\n";
     }
