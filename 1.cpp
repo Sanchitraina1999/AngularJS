@@ -163,7 +163,7 @@ int32_t main()
         ans/=b;
         ans*=(a+b);
         ans/2;
-        ans+=((c*b + a* d )/b) *()
+        ans+=((c*b + a* d )/b) *(a%b);
         cout<<ans<<"\n";
     }
     return 0;
