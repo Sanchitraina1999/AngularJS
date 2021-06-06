@@ -10,6 +10,6 @@ export class AppComponent {
   card = '../assets/dp.jpeg';
   choice = false;
   show = ()=>{
-    console
+    console.log('Sanchit');
   };
 }
