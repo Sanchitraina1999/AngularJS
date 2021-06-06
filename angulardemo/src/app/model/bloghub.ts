@@ -2,8 +2,7 @@ export class Blog{
     constructor(
         private id: number,
         private title: string,
-        pr
-    ){
-
-    }
+        private description: string,
+        private category: string
+    ){}
 }
