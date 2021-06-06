@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Welcome to Training';
   card = '../assets/dp.jpeg';
+  choice = true;
 }
