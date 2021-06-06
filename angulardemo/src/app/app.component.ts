@@ -9,4 +9,7 @@ export class AppComponent {
   title = 'Welcome to Training';
   card = '../assets/dp.jpeg';
   choice = false;
+  show = ()=>{
+    console
+  };
 }

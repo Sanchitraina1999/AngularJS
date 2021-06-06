@@ -2,7 +2,7 @@
 <img [src]='card' width='400px' height='300px'>
 <h2>
   <h3>{{choice}}</h3>
-  <button [disabled]='choice'>
+  <button [disabled]='choice' (click)='show()'>
     Click here
   </button>
 </h2>
