@@ -156,10 +156,11 @@ int32_t main()
     FAST;
     TC
     {
-        ll n,m;
-        cin>>n>>m;
-        if(n==1)cout<<1<<"\n";
-        
+            ll n,m;
+            cin>>n>>m;
+            ll a[n],b[m],ans[m];
+            forn(i,0,n)cin>>a[i];
+            forn(i,0,,m)cin>>b[i];
     }
     return 0;
 }
