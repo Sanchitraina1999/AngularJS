@@ -9,8 +9,9 @@ import { blogs } from '../model/bloglist';
 })
 export class BloglistComponent implements OnInit {
 
-  blogs:Blog[]
+  blogs:Blog[];
   constructor() { 
+    this.blogs = [];
   }
 
   ngOnInit(): void {
