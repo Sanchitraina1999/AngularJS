@@ -10,8 +10,10 @@ export class BlogService {
   blogs: Blog[];
   constructor() { 
     this.blogs = blogs;
+    console.log(blogs);
   }
   addBlog(blog: Blog){
-
+    this.blogs.unshift(blog);
+    console.log(blogs);
   }
 }
