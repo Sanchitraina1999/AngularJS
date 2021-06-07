@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Blog } from '../model/bloghub';
 import { BlogService } from '../service/blog.service';
 
 @Component({
@@ -17,7 +18,7 @@ export class BlogformComponent implements OnInit {
     this.categories = ['Technical', 'Fiction', 'Education'];
   }
 
-  push(blog: any){
+  push(blog: Blog){
     this.service.addBlog(blog);
   }
 
