@@ -8,7 +8,9 @@
 </head>
 
 <body ng-init="names=[1,2,3,4]">
-  <p style="color: {{color}} ">hi</p>
+  <ul>
+    <li *ngFor="let name in names">{{name}}</li>
+  </ul>
 </body>
 
 </html>
