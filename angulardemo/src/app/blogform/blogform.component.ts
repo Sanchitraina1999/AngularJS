@@ -20,6 +20,6 @@ export class BlogformComponent implements OnInit {
 
   push(blog: Blog){
     this.service.addBlog(blog);
-  }
+   }
 
 }
