@@ -1,3 +1,5 @@
 var myApp = angular.module('myApp', []);
 
-myApp.controller('NinjaController',())
+myApp.controller('NinjaController', () => {
+    
+})
