@@ -1,9 +1,15 @@
-<h1>List of blogs</h1>
-<div>
-    <div *ngFor='let blog of blogs'>
-        <h3>{{ blog.number }}</h3>
-        <h4>{{ blog.title }}</h4>
-        <p>{{ blog.description }}</p>
-        <p>{{ blog.category }}</p>
+<div class="text-center">
+    <h1>List of blogs</h1>
+    <div *ngIf="blogs.length==0">
+        <h1>NO BLOGS!!!</h1>
+    </div>
+    <div class="row" *ngFor='let blog of blogs'>
+        <div class="col-3 card" style="width: 18rem;" id='list'>
+            <div class="card-body">
+                <h5 class="card-title">{{blog.title}}</h5>
+                <p class="card-text">{{blog.description}}</p>
+                <p class="card-text text-muted">{{blog.category}}</p>
+            </div>
+        </div>
     </div>
 </div>

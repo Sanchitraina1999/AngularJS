@@ -1,8 +1,8 @@
 export class Blog{
     constructor(
-        private id: number,
-        private title: string,
-        private description: string,
-        private category: string
+        public id: number,
+        public title: string,
+        public description: string,
+        public category: string
     ){}
 }

@@ -2,14 +2,16 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 import { BloglistComponent } from './bloglist/bloglist.component';
+import { BlogformComponent } from './blogform/blogform.component';
 
 const routes: Routes = [];
 
 @NgModule({
-  imports: [BrowserModule,RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes),BrowserModule],
   exports: [RouterModule, BloglistComponent],
   declarations: [
-    BloglistComponent
+    BloglistComponent,
+    BlogformComponent
   ]
 })
 export class AppRoutingModule { }
