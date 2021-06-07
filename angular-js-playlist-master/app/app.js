@@ -5,22 +5,26 @@ myApp.controller('NinjaController', ['$scope', ($scope) => {
         {
             name: "Yoshi",
             belt: "green",
-            rate: 50
+            rate: 50,
+            available: true
         },
         {
             name: "Sanchit",
             belt: "yellow",
-            rate: 30
+            rate: 30,
+            available: false
         },
         {
             name: "Sativa",
             belt: "black",
-            rate: 10
+            rate: 10,
+            available: false
         },
         {
             name: "Shivam",
             belt: "red",
-            rate: 1000
+            rate: 1000,
+            available: true
         },
     ];
 }])
