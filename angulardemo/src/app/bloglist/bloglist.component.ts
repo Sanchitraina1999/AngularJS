@@ -9,14 +9,11 @@ import { BlogService } from '../service/blog.service';
   styleUrls: ['./bloglist.component.css']
 })
 export class BloglistComponent implements OnInit {
-
-  blogs:Blog[];
+  private blogs:Blog[];
   constructor(private service: BlogService) { 
     this.blogs = [];
   }
-
   ngOnInit(): void {
     this.blogs = this.service.getBlogs();
   }
-
 }
