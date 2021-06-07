@@ -8,7 +8,7 @@ const routes: Routes = [];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes),BrowserModule],
-  exports: [RouterModule, BloglistComponent],
+  exports: [RouterModule, BloglistComponen,BlogformComponentt],
   declarations: [
     BloglistComponent,
     BlogformComponent
