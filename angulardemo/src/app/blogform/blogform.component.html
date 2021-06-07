@@ -10,7 +10,9 @@
         <div class='form-group'>
             <select name='category'>
                 <option value='default'>Select a category</option>
-                <option *ngFor='let category of categories' value={{}}
+                <option *ngFor='let category of categories' value='{{category}}'>
+                    {}
+                </option>
             </select>
         </div>
     </form>
