@@ -16,4 +16,6 @@ export class BlogformComponent implements OnInit {
     this.categories = ['Technical', 'Fiction', 'Education'];
   }
 
+  
+
 }
