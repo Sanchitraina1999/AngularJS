@@ -12,7 +12,7 @@
   <div ng-controller="NinjaController">
     <input type="text" ng-model="search">
     <ul>
-      <li ng-repeat="a.name in ninjas | orderBy: 'name' | filter: search">
+      <li ng-repeat="a in ninjas | orderBy: 'name' | filter: search">
         {{a.name}}
       </li>
     </ul>
