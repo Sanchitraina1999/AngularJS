@@ -7,8 +7,8 @@ import { BlogformComponent } from './blogform/blogform.component';
 const routes: Routes = [];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes),BrowserModule],
-  exports: [RouterModule, BloglistComponen,BlogformComponentt],
+  imports: [RouterModule.forRoot(routes), BrowserModule],
+  exports: [RouterModule, BloglistComponent, BlogformComponent],
   declarations: [
     BloglistComponent,
     BlogformComponent
