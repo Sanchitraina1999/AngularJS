@@ -9,10 +9,11 @@ export class BlogformComponent implements OnInit {
 
   categories: string[]
   constructor() {
-    this.categories = ['Technical', 'Fiction', 'Education'];
+    this.categories = [];
   }
 
   ngOnInit(): void {
+    this.categories = ['Technical', 'Fiction', 'Education'];
   }
 
 }
