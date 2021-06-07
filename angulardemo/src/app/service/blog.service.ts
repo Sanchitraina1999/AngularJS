@@ -12,6 +12,9 @@ export class BlogService {
     this.blogs = blogs;
     console.log(blogs);
   }
+  getBlogs(){
+    re
+  }
   addBlog(blog: Blog){
     let id = this.blogs.length + 1;
     blog.id = id
