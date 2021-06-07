@@ -1,5 +1,5 @@
-var myApp = angular.module('myApp', []);
+var myApp = angular.module('myApp', [])
 
 myApp.controller('NinjaController', ($scope) => {
-    $scope.message = 'Sanchit';
+    $scope.name = ['Sanchit', 'Raina']
 })
