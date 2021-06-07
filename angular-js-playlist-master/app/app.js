@@ -5,5 +5,9 @@ myApp.config(() => {
 });
 
 myApp.run(() => {
-    
+
 });
+
+myApp.controller(() => {
+    
+})
