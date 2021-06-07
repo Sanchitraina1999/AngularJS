@@ -1,6 +1,8 @@
+import { ThisReceiver } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { Blog } from '../model/bloghub';
 import { BlogService } from '../service/blog.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'blogform',
@@ -10,7 +12,7 @@ import { BlogService } from '../service/blog.service';
 export class BlogformComponent implements OnInit {
 
   categories: string[]
-  constructor(private service: BlogService) {
+  constructor(private service: BlogService, private router: Router) {
     this.categories = [];
   }
 
@@ -20,6 +22,7 @@ export class BlogformComponent implements OnInit {
 
   push(blog: Blog) {
     this.service.addBlog(blog);
+    this.router.navigate(['/blogs']);
   }
 
 }

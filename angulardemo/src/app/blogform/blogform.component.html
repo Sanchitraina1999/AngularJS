@@ -1,4 +1,3 @@
-<div>Form Value: {{blogform.value | json}}</div>
 <div class='form card card-block container text-center'>
     <h4 class='card-title'>Create Blog</h4>
     <form #blogform='ngForm' (submit)='push(blogform.value)'>

@@ -9,7 +9,7 @@ import { BlogService } from '../service/blog.service';
   styleUrls: ['./bloglist.component.css']
 })
 export class BloglistComponent implements OnInit {
-  private blogs: Blog[];
+  public blogs: Blog[];
   constructor(private service: BlogService) {
     this.blogs = [];
   }

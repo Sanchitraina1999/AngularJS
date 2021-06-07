@@ -19,6 +19,5 @@ export class BlogService {
     let id = this.blogs.length + 1;
     blog.id = id
     this.blogs.unshift(blog);
-    console.log(blogs);
   }
 }

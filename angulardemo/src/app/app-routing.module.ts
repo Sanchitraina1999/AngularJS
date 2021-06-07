@@ -5,7 +5,11 @@ import { BloglistComponent } from './bloglist/bloglist.component';
 import { BlogformComponent } from './blogform/blogform.component';
 import { FormsModule } from '@angular/forms';
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: '', redirectTo: '/blogs', pathMatch: 'full' },
+  { path: 'createblog', component: BlogformComponent },
+  { path: 'blogs', component: BloglistComponent }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes), BrowserModule, FormsModule],
