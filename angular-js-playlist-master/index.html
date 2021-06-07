@@ -10,8 +10,9 @@
 
 <body>
   <div ng-controller="NinjaController">
+    <input type="text" ng-
     <ul>
-      <li ng-repeat="a in ninjas | orderBy: 'name'">
+      <li ng-repeat="a in ninjas | orderBy: 'name' | filter: search">
         {{a}}
       </li>
     </ul>
