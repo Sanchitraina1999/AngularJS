@@ -11,4 +11,7 @@ export class BlogService {
   constructor() { 
     this.blogs = blogs;
   }
+  addBlog(blog: Blog){
+
+  }
 }
