@@ -1,3 +1,9 @@
 var myApp = angular.module('myApp', []);
 
-myApp.config(function);
+myApp.config(() => {
+
+});
+
+myApp.run(() => {
+    
+});
