@@ -17,7 +17,7 @@ export class BlogformComponent implements OnInit {
   }
 
   push(blog: any){
-    alert(blog)
+    
   }
 
 }
