@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BlogService } from '../service/blog.service';
 
 @Component({
   selector: 'blogform',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class BlogformComponent implements OnInit {
 
   categories: string[]
-  constructor() {
+  constructor(private service: BlogService) {
     this.categories = [];
   }
 
@@ -17,7 +18,7 @@ export class BlogformComponent implements OnInit {
   }
 
   push(blog: any){
-    
+
   }
 
 }
