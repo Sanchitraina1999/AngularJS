@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class BlogformComponent implements OnInit {
 
   categories: string[]
-  constructor() { 
-    this.categories=[];
+  constructor() {
+    this.categories = ['Technical', 'Fiction', 'Education'];
   }
 
   ngOnInit(): void {
