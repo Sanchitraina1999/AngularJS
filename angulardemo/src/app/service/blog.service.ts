@@ -13,6 +13,7 @@ export class BlogService {
     console.log(blogs);
   }
   addBlog(blog: Blog){
+    id = this.blogs.le
     this.blogs.unshift(blog);
     console.log(blogs);
   }
