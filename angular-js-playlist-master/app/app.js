@@ -4,19 +4,23 @@ myApp.controller('NinjaController', ['$scope', ($scope) => {
     $scope.ninjas = [
         {
             name: "Yoshi",
-            belt: "green"
+            belt: "green",
+            rate: 50
         },
         {
             name: "Sanchit",
-            belt: "yellow"
+            belt: "yellow",
+            rate: 30
         },
         {
             name: "Sativa",
-            belt: "black"
+            belt: "black",
+            rate: 10
         },
         {
             name: "Shivam",
-            belt: "red"
+            belt: "red",
+            rate: 1000
         },
     ];
 }])
