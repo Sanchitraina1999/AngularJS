@@ -6,5 +6,17 @@ myApp.controller('NinjaController', ['$scope', ($scope) => {
             name: "Yoshi",
             belt: "green"
         },
+        {
+            name: "Sanchit",
+            belt: "yellow"
+        },
+        {
+            name: "Sativa",
+            belt: "black"
+        },
+        {
+            name: "Shivam",
+            belt: "red"
+        },
     ];
 }])
