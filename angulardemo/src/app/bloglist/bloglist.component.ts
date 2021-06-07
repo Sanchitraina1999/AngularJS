@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Blog } from '../model/bloghub';
 import { blogs } from '../model/bloglist';
+import { BlogService } from '../service/blog.service';
 
 @Component({
   selector: 'app-bloglist',
@@ -10,12 +11,12 @@ import { blogs } from '../model/bloglist';
 export class BloglistComponent implements OnInit {
 
   blogs:Blog[];
-  constructor() { 
+  constructor(private service: BlogService) { 
     this.blogs = [];
   }
 
   ngOnInit(): void {
-    this.blogs = blogs;
+    this.blogs = this.service.addBlo;
   }
 
 }
