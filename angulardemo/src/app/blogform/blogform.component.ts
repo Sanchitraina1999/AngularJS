@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-blogform',
+  selector: 'blogform',
   templateUrl: './blogform.component.html',
   styleUrls: ['./blogform.component.css']
 })
