@@ -7,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlogformComponent implements OnInit {
 
-  constructor() { }
+  categories: string[]
+  constructor() { 
+    this.categories=[];
+  }
 
   ngOnInit(): void {
   }
