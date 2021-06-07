@@ -16,7 +16,7 @@ export class BlogformComponent implements OnInit {
     this.categories = ['Technical', 'Fiction', 'Education'];
   }
 
-  push(blog){
+  push(blog: any){
     alert(blog)
   }
 
