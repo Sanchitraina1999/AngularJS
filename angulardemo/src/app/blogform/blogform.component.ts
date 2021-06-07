@@ -18,8 +18,8 @@ export class BlogformComponent implements OnInit {
     this.categories = ['Technical', 'Fiction', 'Education'];
   }
 
-  push(blog: Blog){
+  push(blog: Blog) {
     this.service.addBlog(blog);
-   }
+  }
 
 }

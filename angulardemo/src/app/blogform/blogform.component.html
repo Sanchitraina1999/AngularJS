@@ -1,12 +1,13 @@
 <div>Form Value: {{blogform.value | json}}</div>
 <div class='form card card-block container text-center'>
     <h4 class='card-title'>Create Blog</h4>
-    <form #blogform = 'ngForm' (submit)='push(blogform.value)'>
+    <form #blogform='ngForm' (submit)='push(blogform.value)'>
         <div class='form-group'>
             <input type='text' class='form-control' placeholder='Enter the title' name='title' required ngModel>
         </div>
         <div class='form-group pt-3 pb-3'>
-            <input type='text' class='form-control' placeholder='Enter the description' name='description' required ngModel>
+            <input type='text' class='form-control' placeholder='Enter the description' name='description' required
+                ngModel>
         </div>
         <div class='form-group pb-3'>
             <select name='category' ngModel>
@@ -16,7 +17,7 @@
                 </option>
             </select>
         </div>
-        <button class='btn btn-dark'type='submit'>
+        <button class='btn btn-dark' type='submit'>
             Add Blog
         </button>
     </form>
