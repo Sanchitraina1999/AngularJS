@@ -28,6 +28,10 @@ myApp.controller('NinjaController', ['$scope', ($scope) => {
         }
     ]
     $scope.addNewNinja=(newninja)=>{
-        $scope.ninjas.push(newninja)
+        $scope.ninjas.push({
+            name: newninja.name,
+            name: newninja.name,
+            name: newninja.name,
+        })
     }
 }])
