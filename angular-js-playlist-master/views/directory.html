@@ -11,7 +11,8 @@
                 </span>
             </li>
         </ul>
-        <form ng-model="registrationForm" ng-submit="addNewNinja(newninja)">
+        <div>Add a new ninja</div>
+        <form ng-submit="addNewNinja(newninja)">
             <input type="text" placeholder="Enter your name" ng-model="newninja.name">
             <input type="color" placeholder="Enter your belt" ng-model="newninja.belt">
             <input type="number" placeholder="Enter your rate" ng-model="newninja.rate">
