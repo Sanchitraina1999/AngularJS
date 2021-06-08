@@ -6,40 +6,19 @@ myApp.config(['$routeProvider', ($routeProvider) => {
             templateUrl: 'views/home.html'
         })
         .when('/directory', {
-            templateUrl: 'views/directory.html'            
+            templateUrl: 'views/directory.html'
         })
         .otherwise({
             redirectTo: '/home'
         })
 }])
 
-myApp.controller('NinjaController', ['$scope', ($scope) => {
-    $scope.ninjas = [
-        {
-            name: "Yoshi",
-            belt: "green",
-            rate: 50,
-            available: true
-        },
-        {
-            name: "Sanchit",
-            belt: "yellow",
-            rate: 30,
-            available: false
-        },
-        {
-            name: "Sativa",
-            belt: "black",
-            rate: 10,
-            available: false
-        },
-        {
-            name: "Shivam",
-            belt: "red",
-            rate: 1000,
-            available: true
-        }
-    ]
+myApp.controller('NinjaController', ['$scope', '$http', ($scope, $http) => {
+    $http.get('data/ninjas.json')
+        .then((res) => {
+            $scope.ninjas = res.data
+        })
+    console.log(angular.toJson($scope.ninjas))
     $scope.addNewNinja = (newninja) => {
         $scope.ninjas.push({
             name: newninja.name,
