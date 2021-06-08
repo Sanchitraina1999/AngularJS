@@ -19,7 +19,7 @@
         <li ng-repeat="ninja in ninjas | orderBy: order | filter: search">
           <h3>{{ninja.name}} - {{ninja.rate | currency: "£"}}</h3>
           <div class="remove" ng-click="ninjas.splice($index, 1)">x</div>
-          <span class="belt" style="background: gray;color: {{ninja.belt}}">{{ninja.belt|uppercase}} </span>
+          <span class="belt" style="background: gray;color: {{ninja.belt}}">{{ninja.belt|uppercase}} Belt </span>
         </li>
       </ul>
       <form ng-model="registrationForm" ng-submit="addNewNinja(newninja)">
