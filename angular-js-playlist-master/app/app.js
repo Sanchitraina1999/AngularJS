@@ -25,6 +25,6 @@ myApp.controller('NinjaController', ['$scope', ($scope) => {
             belt: "red",
             rate: 1000,
             available: true
-        },
-    ];
+        }
+    ]
 }])
