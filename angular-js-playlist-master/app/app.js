@@ -1,4 +1,4 @@
-var myApp = angular.module('myApp', [])
+var myApp = angular.module('myApp', [ngRoute])
 
 myApp.controller('NinjaController', ['$scope', ($scope) => {
     $scope.ninjas = [
