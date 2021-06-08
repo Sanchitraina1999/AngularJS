@@ -1,6 +1,6 @@
 var myApp = angular.module('myApp', ['ngRoute'])
 
-myApp.config(['$routeProvider',])
+myApp.config(['$routeProvider'])
 
 myApp.controller('NinjaController', ['$scope', ($scope) => {
     $scope.ninjas = [
