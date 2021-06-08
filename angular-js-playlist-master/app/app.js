@@ -1,6 +1,9 @@
 var myApp = angular.module('myApp', ['ngRoute'])
 
-myApp.config()
+angular.module('phonecatApp', [
+    'ngRoute',
+    ...
+  ]);
 
 myApp.controller('NinjaController', ['$scope', ($scope) => {
     $scope.ninjas = [
