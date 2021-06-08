@@ -3,7 +3,10 @@ var myApp = angular.module('myApp', ['ngRoute'])
 myApp.config(['$routeProvider', function ($routeProvider) {
     $routeProvider
         .when('/home', { templateUrl: 'views/home.html' })
-        .when('/directory', { templateUrl: 'views/directory.html', controller: Ninj })
+        .when('/directory', { templateUrl: 'views/directory.html', controller: 'NinjaController' })
+        .otherwise({
+            redirectTo: '/home'
+        })
 }])
 
 myApp.controller('NinjaController', ['$scope', ($scope) => {
