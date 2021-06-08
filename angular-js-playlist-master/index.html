@@ -17,7 +17,6 @@
       <input type="text" ng-model="search" placeholder="Search for a ninja">
       <ul>
         <li ng-repeat="ninja in ninjas | orderBy: order | filter: search">
-          <img src="" alt="">
           <h3>{{ninja.name}} - {{ninja.rate | currency: "£"}}</h3>
           <div class="remove" ng-click="ninjas.splice($index, 1)">x</div>
           <span class="belt" style="background: gray;color: {{ninja.belt}}">{{ninja.belt | uppercase}} Belt </span>
