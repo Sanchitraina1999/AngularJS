@@ -6,29 +6,25 @@ myApp.controller('NinjaController', ['$scope', ($scope) => {
             name: "Yoshi",
             belt: "green",
             rate: 50,
-            available: true,
-            thumb: ""
+            available: true
         },
         {
             name: "Sanchit",
             belt: "yellow",
             rate: 30,
-            available: false,
-            thumb: ""
+            available: false
         },
         {
             name: "Sativa",
             belt: "black",
             rate: 10,
-            available: false,
-            thumb: ""
+            available: false
         },
         {
             name: "Shivam",
             belt: "red",
             rate: 1000,
-            available: true,
-            thumb: ""
+            available: true
         }
     ]
     $scope.addNewNinja = (newninja) => {
