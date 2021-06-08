@@ -27,4 +27,7 @@ myApp.controller('NinjaController', ['$scope', ($scope) => {
             available: true
         }
     ]
+    $scope.addNewNinja(){
+        ninjas.push(newninja)
+    }
 }])
