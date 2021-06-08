@@ -34,5 +34,6 @@ myApp.controller('NinjaController', ['$scope', ($scope) => {
             rate: newninja.rate,
             available: true
         })
+        console.log(typeof newninja.rate)
     }
 }])
