@@ -34,5 +34,8 @@ myApp.controller('NinjaController', ['$scope', ($scope) => {
             rate: newninja.rate,
             available: true
         })
+        newninja.name = ''
+        newninja.belt = ''
+        newninja.rate = ''
     }
 }])
