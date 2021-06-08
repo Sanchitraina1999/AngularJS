@@ -27,11 +27,12 @@ myApp.controller('NinjaController', ['$scope', ($scope) => {
             available: true
         }
     ]
-    $scope.addNewNinja=(newninja)=>{
+    $scope.addNewNinja = (newninja) => {
         $scope.ninjas.push({
             name: newninja.name,
-            name: newninja.name,
-            name: newninja.name,
+            belt: newninja.belt,
+            rate: newninja.rate,
+            available: true
         })
     }
 }])
