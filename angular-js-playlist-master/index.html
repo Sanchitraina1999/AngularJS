@@ -22,7 +22,7 @@
           <span class="belt" style="background: gray;color: {{ninja.belt}}">{{ninja.belt|uppercase}} </span>
         </li>
       </ul>
-      <form ng-model="registrationForm" ng-submit="ob=newninja ninjas.push(newninja)">
+      <form ng-model="registrationForm" ng-submit="addNewNinja(newninja(">
         <input type="text" placeholder="Enter your name" ng-model="newninja.name">
         <input type="text" placeholder="Enter your belt" ng-model="newninja.belt">
         <input type="number" placeholder="Enter your rate" ng-model="newninja.rate">
