@@ -10,26 +10,7 @@
 
 <body>
   <header ng-include="'header.html'"></header>
-  <div class="content">
-    <div ng-controller="NinjaController">
-      <button ng-click="order='name'">Order by Name</button>
-      <button ng-click="order='belt'">Order by Belt</button>
-      <input type="text" ng-model="search" placeholder="Search for a ninja">
-      <ul>
-        <li ng-repeat="ninja in ninjas | orderBy: order | filter: search">
-          <h3>{{ninja.name}} - {{ninja.rate | currency: "£"}}</h3>
-          <div class="remove" ng-click="ninjas.splice($index, 1)">x</div>
-          <span class="belt" style="background: gray;color: {{ninja.belt}}">{{ninja.belt | uppercase}} Belt </span>
-        </li>
-      </ul>
-      <form ng-model="registrationForm" ng-submit="addNewNinja(newninja)">
-        <input type="text" placeholder="Enter your name" ng-model="newninja.name">
-        <input type="color" placeholder="Enter your belt" ng-model="newninja.belt">
-        <input type="number" placeholder="Enter your rate" ng-model="newninja.rate">
-        <input type="submit">
-      </form>
-    </div>
-  </div>
+  <header ng-include="'v'"
 </body>
 
 </html>
