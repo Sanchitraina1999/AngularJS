@@ -2,7 +2,8 @@ var myApp = angular.module('myApp', ['ngRoute'])
 
 myApp.config(['$routeProvider', function ($routeProvider) {
     $routeProvider
-    .when('/home',{ templateurl: 'views/home.html'})
+        .when('/home', { templateurl: 'views/home.html' })
+        .when('/directory', { templateurl: 'views/directory.html' })
 }])
 
 myApp.controller('NinjaController', ['$scope', ($scope) => {
